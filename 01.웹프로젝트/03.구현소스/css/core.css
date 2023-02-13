@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* 웹폰트, 공통클래스 셋팅 - core.css */
+
+/* 웹폰트 CDN */
+/* 영어 - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* 한글 - NanumSquare */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/*
+    1. 영어,제목체
+    font-family: 'Montserrat', 'NanumSquare', sans-serif;
+    2. 한글,내용체
+    font-family: 'NanumSquare', sans-serif;
+*/
