@@ -10,6 +10,10 @@ html,body,h1,h2,ul,ol,p{
 ul,ol{
     list-style: none;
 }
+/* a요소 셋팅 */
+a{
+    text-decoration: none;
+}
 /* 글자크기셋팅 - rem */
 html{
     font-size: 10px;
