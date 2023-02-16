@@ -2,9 +2,9 @@
 /* 웹폰트, 공통클래스 셋팅 - core.css */
 
 /* 웹폰트 CDN */
-/* 영어 - Montserrat */
+/* Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-/* 한글 - NanumSquare */
+/* NanumSquare */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 /*
     1. 영어/제목체
@@ -15,19 +15,19 @@
 
 /* 공사중 표시 */
 body * {
-    outline: 1px dashed darkcyan;
-    background-color: var(--bg);
+    outline: 1px dotted darkcyan;
 }
 
 :root{
     --main-color: #FF7360;
     --sub-color: #FFC4BC;
     --tit-color: #111;
-    --cnt-color: #555;
+    --cont-color: #555;
     --purple-color: #643AD6;
     --bg-color: #fff5ee;
 }
 
 .ibx {
     max-width: 1600px;
+    margin: 0 auto;
 }

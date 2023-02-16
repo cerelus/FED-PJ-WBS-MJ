@@ -6,15 +6,23 @@ html,body,h1,h2,ul,ol,p{
     margin: 0;
     padding: 0;
 }
+
 /* 블릿/숫자 제거 */
 ul,ol{
     list-style: none;
 }
+
 /* a요소 셋팅 */
 a{
     text-decoration: none;
 }
+
 /* 글자크기셋팅 - rem */
 html{
     font-size: 10px;
+}
+
+img{
+    /* 박스 이미지 하단간극 없애기 */
+    vertical-align: top;
 }
