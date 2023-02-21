@@ -15,6 +15,7 @@ ul,ol{
 /* a요소 셋팅 */
 a{
     text-decoration: none;
+    color: #111;
 }
 
 /* 글자크기셋팅 - rem */
