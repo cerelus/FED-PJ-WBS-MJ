@@ -7,24 +7,35 @@
 /* NanumSquare */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 /*
-    1. 영어/제목체
+    1. 영문/제목체
     font-family: 'Montserrat', 'NanumSquare', sans-serif;
     2. 한글/내용체
     font-family: 'NanumSquare', sans-serif;
 */
+:root{
+    /**** 색상 ****/
+    --tit-color: #111;
+    --cont-color: #555;
+    
+    /* 컨텐츠 */
+    --color-bx: #643AD6;
+    --color-point: #FF7360;
+    --color-tit: #FFC4BC;
+    
+    /* 배경색 */
+    --color-bg: #fff5ee;
+    
+    /**** 폰트 ****/
+    /* 영문 */
+    --font-en: 'Montserrat', 'NanumSquare', sans-serif;
+    /* 한글 */
+    --font-kr: 'NanumSquare', sans-serif;
+
+}
 
 /* 공사중 표시 */
 body * {
     outline: 1px dotted darkcyan;
-}
-
-:root{
-    --main-color: #FF7360;
-    --sub-color: #FFC4BC;
-    --tit-color: #111;
-    --cont-color: #555;
-    --purple-color: #643AD6;
-    --bg-color: #fff5ee;
 }
 
 .ibx {
