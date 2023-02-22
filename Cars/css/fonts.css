@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Flaviotte";
+	src: url("./fonts/Flaviotte.eot"); /* IE9 Compat Modes */
+	src: url("./fonts/Flaviotte.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		 url("./fonts/Flaviotte.otf") format("opentype"), /* Open Type Font */
+		 url("./fonts/Flaviotte.svg") format("svg"), /* Legacy iOS */
+		 url("./fonts/Flaviotte.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url("./fonts/Flaviotte.woff") format("woff"), /* Modern Browsers */
+		 url("./fonts/Flaviotte.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 100;
+	font-style: normal;
+}
+
+/* 웹폰트 CDN - Itim */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); 
