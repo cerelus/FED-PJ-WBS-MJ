@@ -1,29 +1,29 @@
 @charset "utf-8";
 /* 요소리셋 - reset.css */
 
-/* 마진,패딩 초기화 */
+/* 마진,패딩 없애기 */
 html,body,h1,h2,ul,ol,p{
     margin: 0;
     padding: 0;
 }
 
-/* 블릿/숫자 제거 */
 ul,ol{
+    /* 블릿/숫자 제거 */
     list-style: none;
 }
 
-/* a요소 셋팅 */
+/* a요소 리셋 */
 a{
     text-decoration: none;
     color: #111;
 }
 
-/* 글자크기셋팅 - rem */
+/* 루트 글자크기셋팅 - rem */
 html{
-    font-size: 17px;
+    font-size: 10px;
 }
 
+/* 박스내부의 이미지 하단공백 없애기 */
 img{
-    /* 박스내부의 이미지 하단공백 없애기 */
     vertical-align: top;
 }

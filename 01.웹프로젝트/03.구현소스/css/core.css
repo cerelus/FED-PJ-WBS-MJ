@@ -2,7 +2,7 @@
 /* 웹폰트, 공통클래스 셋팅 - core.css */
 
 /* 웹폰트 CDN */
-/* Montserrat */
+/* Montserrat -> 변경 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* NanumSquare */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
@@ -12,20 +12,18 @@
     2. 한글/내용체
     font-family: 'NanumSquare', sans-serif;
 */
+
+/* 전역 CSS변수 선언 - 공통속성 셋팅 */
 :root{
-    /**** 색상 ****/
+    /* 색상 */
     --tit-color: #111;
     --cont-color: #555;
-    
-    /* 컨텐츠 */
     --color-bx: #643AD6;
     --color-point: #FF7360;
     --color-tit: #FFC4BC;
-    
-    /* 배경색 */
     --color-bg: #fff5ee;
     
-    /**** 폰트 ****/
+    /* 폰트 */
     /* 영문 */
     --font-en: 'Montserrat', 'NanumSquare', sans-serif;
     /* 한글 */
@@ -39,6 +37,6 @@ body * {
 }
 
 .ibx {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
