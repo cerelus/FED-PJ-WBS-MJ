@@ -6,3 +6,7 @@
 @import url(./reset.css);
 @import url(./core.css);
 @import url(./common.css);
+
+.bgVideo video{
+    width: 100%;
+}
