@@ -6,7 +6,7 @@
 @import url(fonts.css);
 
 body {
-    font-family: "Flaviotte";
+    font-family: "dominikth";
 }
 
 /* B. 메인부분 */
@@ -48,8 +48,8 @@ body {
     left: 0;
     background-color: rgba(255, 255, 255, 0.6);
     font-size: 2vw;
+    font-weight: bold;
     color: #000000;
-    
 }
 
 .cont > div:hover {
@@ -79,4 +79,39 @@ body {
 .characters {
     grid-area: characters;
     background: url(../image/main.jpg) no-repeat  center 80%/cover;
+}
+
+@media(max-width:1024px){
+    .cont > div > a {
+        font-size: 4vw;
+    }
+}
+
+@media(max-width:750px){
+    .bg_con {
+        height: calc(100vh - 160px);
+    }
+
+    .cont {
+        height: 65vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        'season1'
+        'season2'
+        'season3'
+        'characters';
+        top: 47%;  
+        transform: translate(-50%, -50%);
+    }
+
+    .cont > div > a {
+        display: flex;
+        font-size: 6vw;
+    }
+    
+    .cont > div:hover {
+        background-size: 100% auto;
+        transition: none;
+    }
 }

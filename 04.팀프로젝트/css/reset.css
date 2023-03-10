@@ -10,7 +10,7 @@ a {
     display: block;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -18,8 +18,18 @@ ul, ol {
     list-style: none;
 }
 
-ol::after, ul::after {
-    content: '';
-    display: block;
-    clear: both;
+/* 스크롤바 */
+::-webkit-scrollbar {
+    /* 전체 스크롤바 크기변경 */
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    /* 스크롤바 */
+    background-color: #ddd;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    /* 스크롤바 트랙 배경 */
+    background-color: #555;
+    border-radius: 5px;
 }

@@ -3,32 +3,100 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- 파비콘 넣기 -->
-        <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico" />
-        <link rel="stylesheet" href="./css/season2.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico">
+
         <title>Cars | season2</title>
+        <link rel="stylesheet" href="./css/season2.css" />
+        <script src="./js/nav.js"></script>
+
     </head>
     <body>
         <!-- 1. 상단영역 -->
-        <header id="top">
-            <!-- 1.페이지 타이틀 -->
-            <div class="top">
+        <div id="top">
+            <!-- 페이지 타이틀 -->
+            <header class="top">
                 <a href="index.html">
                     <img class="tit" src="image/logo.png" alt="Cars 로고 타이틀" />
                 </a>
+                <!-- GNB 버튼 -->
+                <div class="btn_con">
+                    <a href="#" onclick="nav();">
+                        MENU
+                    </a>
+                </div>
+            </header>
+        </div>
+        <!-- GNB 메뉴 -->
+        <div id="nav_bg" onclick="nav();"></div>
+        <nav id="nav">
+            <div class="contents_con">
+                <div class="left_con left_nav" onclick="nav();"></div>
+                <div class="right_con right_nav">
+                    <div class="contents_con">
+                        <div class="close_btn">
+                            <a href="#" onclick="nav();">
+                                CLOSE
+                            </a>
+                        </div>
+
+                        <div class="list_con">
+                            <ul>
+                                <li>
+                                    <a href="season1.html">
+                                        Season 1
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="season2.html">
+                                        Season 2
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="season3.html">
+                                        Season 3
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="characters.html">
+                                        Characters
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- 메뉴버튼자리 -->
-        </header>
+        </nav>
 
         <!-- 2. 메인영역 -->
         <div id="cont">
             <main class="cont ibx">
+                <!-- 1번 컨텐츠 -->
+                <section class="ct1">
+                    <div class="bg_ct1"></div>
+                    <div class="tit_ct1">
+                        <h1 class="font_tit">Cars 2</h1>
+                        <p>Star racecar Lightning McQueen and the incomparable tow truck Mater take their friendship to exciting new places in Cars 2 when they head overseas to compete in the first-ever World Grand Prix to determine the world's fastest car.</p>
+                    </div>
+                </section>
+                <section class="ct2">
+
+                </section>
+                <section class="ct3">
+
+                </section>
+                <section class="ct4">
+
+                </section>
             </main>
         </div>
 
         <!-- 3. 하단영역 -->
-        <footer id="info">
-            <div class="info">
+        <div id="info">
+            <footer class="info">
                 <div class="copyLogo">
                     <img src="image/prd_logo.png" alt="제작사로고" />
                 </div>
@@ -64,7 +132,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
