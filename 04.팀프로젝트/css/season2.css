@@ -10,12 +10,19 @@ body{
     font-family: "neutraltextbook";
 }
 p{
+    /* p태그 리셋 */
     margin: 0;
     padding: 0;
 }
+img{
+    /* 이미지 하단여백 지우기 */
+    vertical-align: top;
+}
 .font_tit{
+    /* 제목폰트 설정 */
     font-family: "dominikth";
 }
+
 
 /* 1번 컨텐츠 */
 .cont1{
@@ -26,10 +33,9 @@ p{
     width: 100%;
     height: 100vh;
 
-    background: url(../image2/main2.jpg) no-repeat center/cover;
+    background: url(../image/car2_main.jpg) no-repeat center/cover;
     filter: brightness(40%);
 }
-
 .tit_ct1{
     position: absolute;
     /* 박스가운데 정렬 */
@@ -37,21 +43,41 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 40vw;
+    width: 50vw;
 
     color: #fff;
 }
 .tit_ct1 h1{
+    margin-bottom: 30%;
+
     text-align: center;
-    font-size: 48px;
+    font-size: 70px;
 }
 .tit_ct1 p{
-    margin-top: 20px;
-
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 20px;
 }
+
+
 /* 2번 컨텐츠 */
+.ct2{
+    display: flex;
+}
+.imgbx{
+    width: 50%;
+}
+.imgbx img{
+    width: 100%;
+    object-fit: cover;
+    height: calc(100vh - 100px);
+}
+.txtbx{
+    width: 50%;
+}
+.txtbx img{
+    width: 16vw;
+}
+
 /* 3번 컨텐츠 */
 /* 4번 컨텐츠 */
