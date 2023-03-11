@@ -67,10 +67,35 @@ img{
 .imgbx{
     width: 50%;
 }
-.imgbx img{
+.slide{
+    /* li의 부모자격 */
+    position: relative;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
+
+}
+.slide li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: 2s;
+}
+.slide li img{
+    /* 이미지를 부모인 li크기만큼 맞춤 */
+    width: 100%;
+    height: 100%;
+
     object-fit: cover;
+    /* cover : 비율유지하면서 박스의 크기에 맞게 이미지를 채움
+    -> 그만큼 이미지가 잘려서 나옴 */
+}
+.slide li.on{
+    opacity:1;
 }
 .txtbx{
     display: flex;
