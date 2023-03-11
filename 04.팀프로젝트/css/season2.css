@@ -59,6 +59,7 @@ img{
     font-size: 70px;
 }
 
+
 /* 2번 컨텐츠 */
 .ct2{
     display: flex;
@@ -71,7 +72,7 @@ img{
     height: calc(100vh - 100px);
     object-fit: cover;
 }
-/* .txtbx{
+.txtbx{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,22 +81,10 @@ img{
     padding: 0 3vw;
     box-sizing: border-box;
     width: 50%;
-} */
+}
 .txtbx img{
     margin: -20px 0 20px;
     width: 15vw;
-}
-.txtbx{
-    width: 50%;
-
-    position: relative;
-}
-.bx{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 
