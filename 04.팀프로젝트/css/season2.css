@@ -5,14 +5,19 @@
 @import url(./common.css);
 @import url(./fonts.css);
 
-/* 서브 페이지 전체적용 */
-body{
+/* 서브 페이지 기본값 셋팅 */
+#cont{
     font-family: "neutraltextbook";
+    font-size: 22px;
+    color: rgba(29, 29, 29, 0.702);
 }
 p{
     /* p태그 리셋 */
     margin: 0;
     padding: 0;
+
+    text-align: justify;
+    line-height: 1.6;
 }
 img{
     /* 이미지 하단여백 지우기 */
@@ -48,17 +53,11 @@ img{
     color: #fff;
 }
 .tit_ct1 h1{
-    margin-bottom: 30%;
+    margin-bottom: 15%;
 
     text-align: center;
     font-size: 70px;
 }
-.tit_ct1 p{
-    text-align: justify;
-    line-height: 1.6;
-    font-size: 20px;
-}
-
 
 /* 2번 컨텐츠 */
 .ct2{
@@ -69,15 +68,36 @@ img{
 }
 .imgbx img{
     width: 100%;
-    object-fit: cover;
     height: calc(100vh - 100px);
+    object-fit: cover;
+}
+/* .txtbx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0 3vw;
+    box-sizing: border-box;
+    width: 50%;
+} */
+.txtbx img{
+    margin: -20px 0 20px;
+    width: 15vw;
 }
 .txtbx{
     width: 50%;
+
+    position: relative;
 }
-.txtbx img{
-    width: 16vw;
+.bx{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
 
 /* 3번 컨텐츠 */
 /* 4번 컨텐츠 */
