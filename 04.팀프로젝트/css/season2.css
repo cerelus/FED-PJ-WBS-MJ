@@ -19,18 +19,20 @@ p{
     text-align: justify;
     line-height: 1.6;
 }
-img{
+#cont img{
     /* 이미지 하단여백 지우기 */
     vertical-align: top;
+    object-fit: cover;
 }
 .font_tit{
     /* 제목폰트 설정 */
     font-family: "dominikth";
+    color: #000;
 }
 
 
 /* 1번 컨텐츠 */
-.cont1{
+.ct1{
     /* .ct1_tit 부모자격 */
     position: relative;
 }
@@ -57,6 +59,8 @@ img{
 
     text-align: center;
     font-size: 70px;
+
+    color: #fff;
 }
 
 
@@ -109,10 +113,113 @@ img{
 }
 .txtbx img{
     width: 18vw;
-    position: relative;
-    top: -10%;
+    margin: -10px 0 30px;
 }
 
 
 /* 3번 컨텐츠 */
+
+.ct3{
+    display: flex;
+  }
+  .slidebx{
+    /* .abtn의 부모 */
+    position: relative;
+  
+    width: 50%;
+  }
+  .ct3 h2{
+    font-size: 50px;
+  }
+  .slide2{
+    width: 100%;
+    height: 100vh;
+  }
+  .slide2 li{
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .slide2 li img{
+    width: 100%;
+    height: 100%;
+  
+    filter: brightness(40%);
+  }
+  .slide2 li.dbk{
+    display: block;
+  }
+  .abtn{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+  }
+  .abtn img{
+    width: 80px;
+  }
+  .right {
+    right: 0;
+  }
+  .abtn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px 0;
+    width: 50%;
+    
+  }
+  .btns h2{
+    margin-bottom: 20px;
+  }
+  .btns div{
+    position: relative;
+  
+    width: 60%;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 25px 40px;
+    box-sizing: border-box;
+  
+    border: 1px solid #c2c2c2;
+
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: color .3s, opacity 1s;
+    
+  }
+  .btns div::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #dbdbdb;
+    top: 0;
+    left: -100%;
+    transition: all .4s ease-in-out;
+    z-index: -1;
+  }
+  .btns div:hover{
+    color: #000;
+  }
+  .btns div:hover::before{
+    transform: translateX(100%);
+  }
+  .btns div img{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 20px;
+  }
+  .btns div.op1,
+  .btns div:hover {
+    opacity: 1;
+    
+  }
+  
+  
 /* 4번 컨텐츠 */
