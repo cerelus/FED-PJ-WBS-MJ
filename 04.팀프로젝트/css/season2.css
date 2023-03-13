@@ -135,8 +135,7 @@ a{
     width: 50%;
   }
   .slidebx a{
-    /* 미디어쿼리시 보이기 */
-    /* display: none; */
+    display: none;
   }
   .slide2{
     /* li opacity 적용 */
