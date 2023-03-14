@@ -111,8 +111,8 @@ a {
     width: 50%;
 }
 .txtbx img {
-    width: 18vw;
-    margin: -10px 0 30px;
+    width: 270px;
+    margin-bottom: 30px;
 }
 
 /************* 3번 컨텐츠 *************/
@@ -346,13 +346,11 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 420px;
-    height: 160px;
-    margin: 0 auto;
-    margin-top: 5px;
+    align-items: center;
 }
 .mimg li {
     width: 100%;
+    position: relative;
 }
 .mimg li img {
     width: 100%;
@@ -388,9 +386,19 @@ a {
     .btns span {
         font-size: 18px;
     }
+    .txtbx img {
+        width: 250px;
+    }
 }
 /* 1024px 사이즈이하 */
 @media screen and (max-width: 1024px) {
+    #cont {
+        font-size: 18px;
+    }
+    .tit_ct1 h1 {
+        margin-bottom: 13%;
+        font-size: 60px;
+    }
     .imgbx,
     .btns {
         display: none;
@@ -406,17 +414,21 @@ a {
     .txtbx {
         height: 50vh;
     }
+    .txtbx{
+        padding: 0 100px;
+    }
     .slidebx a {
         display: block;
     }
     .sbx {
-        width: 85%;
+        width: 60%;
     }
     .tit_ct1 {
         width: 70vw;
     }
     .txtbx img {
-        width: 200px;
+        width: 180px;
+        margin-bottom: 15px;
     }
     .ct4 {
         height: calc(100vh - 160px);
@@ -424,10 +436,10 @@ a {
 }
 @media screen and (max-width: 740px) {
     .txtbx img {
-        width: 175px;
+        display: none;
     }
     .tit_ct1 h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     .tit_ct1 {
         width: 85vw;
@@ -438,27 +450,47 @@ a {
     .sbx {
         display: none;
     }
-    #mimg {
-        display: block;
+    .ct4 h2{
+        font-size: 40px;
     }
+    .txt h3 {
+        font-size: 30px;
+    }
+    .txtbx {
+        padding: 0 50px;
+    }
+    #mimg{
+        display: block;
+        width: 400px;
+    margin: 0 auto;
+    }
+    .mimg li img {
+        width: 100%;
+        height: 140px;
+      }
+      .mimg {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
     
 }
 @media screen and (max-width: 500px) {
     .sbtn img {
         width: 59px;
     }
-    .mimg {
-        width: 330px;
-    }
-    .txtbx img {
-        margin: 0 0 30px;
+    #mimg {
+        width: 300px;
     }
     .ct4 h2 {
       padding: 30px 0;
       font-size: 38px;
     }
     .mimg{
-      gap: 40px;
+      gap: 10px;
+    }
+    #cont {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 375px) {
@@ -473,7 +505,16 @@ a {
         margin-bottom: 20px;
         font-size: 33px;
     }
-    .txtbx img {
-        margin-bottom: 10px;
-    }
+}
+.slide4 li a::after,
+.mimg li a::after{
+    content: '';
+    background: url(../image/btn.png) no-repeat center/cover;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

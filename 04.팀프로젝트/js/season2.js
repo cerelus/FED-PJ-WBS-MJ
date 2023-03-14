@@ -277,6 +277,5 @@ function loadFn_car2() {
         // 다시 작동하도록 호출
         autoT = setTimeout(autoSlide, 5000);
     } // clearAuto()
-        
     
 } // loadFn()
