@@ -5,10 +5,6 @@
 @import url(./common.css);
 @import url(./fonts.css);
 
-.ct1,
-.ct2 {
-    min-width: 375px;
-}
 /* 서브 페이지 기본값 셋팅 */
 #cont {
     font-family: "neutraltextbook";
@@ -506,10 +502,10 @@ a {
         font-size: 33px;
     }
 }
-.slide4 li a::after,
+/* .slide4 li a::after,
 .mimg li a::after{
     content: '';
-    background: url(../image/btn.png) no-repeat center/cover;
+    background: url(../image/car2_ct2_1.jpg) no-repeat center/cover;
     width: 80px;
     height: 80px;
     display: inline-block;
@@ -517,4 +513,10 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s;
 }
+.slide4 li:hover a::after,
+.mimg li:hover a::after{
+    opacity: 1;
+} */
