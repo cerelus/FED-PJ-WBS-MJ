@@ -13,14 +13,14 @@ function loadFn_car2() {
     const addCls = (x, y) => x.classList.add(y);
     const removeCls = (x, y) => x.classList.remove(y);
 
-    /************* 2번 컨텐츠 *************/
+    // /************* 2번 컨텐츠 *************/
     // 1. 대상선정
     const slide = qsa(".slide li");
 
     // 슬라이드번호 변수
     let snum = 0;
     // 슬라이드 개수
-    let scnt = qsa.length;
+    let scnt = slide.length;
 
     // 2. 함수생성
     function goFade() {
@@ -51,7 +51,7 @@ function loadFn_car2() {
     const abtn = qsa(".slidebx .sbtn");
 
     // 슬라이드번호 변수
-    snum = 1;
+    let nums = 1;
     // 슬라이드개수
     scnt = slide2.length;
 
@@ -61,8 +61,8 @@ function loadFn_car2() {
         ele.onclick = () => {
             clearAll();
             // 셋팅
-            addCls(slide2[idx]);
-            addCls(ele);
+            addCls(slide2[idx],"op1");
+            addCls(ele,"op1");
         }; // click
     }); // forEach
 
@@ -72,18 +72,18 @@ function loadFn_car2() {
             clearAll();
             // idx - 방향분기
             if (idx) {
-                addCls(slide2[snum],"op1");
-                snum++;
+                addCls(slide2[nums],"op1");
+                nums++;
             } // if
             else {
-                addCls(slide2[snum],"op1");
-                snum--;
+                addCls(slide2[nums],"op1");
+                nums--;
             } // else
 
             // 한계값
-            if (snum === -1) snum = scnt - 1;
+            if (nums === -1) nums = scnt - 1;
             //끝다음->처음
-            else if (snum === scnt) snum = 0;
+            else if (nums === scnt) nums = 0;
         }; // click
     }); // forEach
 
@@ -208,12 +208,12 @@ function loadFn_car2() {
     }); // forEach
 
 
-        slide3.forEach((ele, idx) => {
-            ele.onclick = () => {
-                clearAuto();
-                goSlide(idx);
-            }; // click
-        }); // forEach
+        // slide3.forEach((ele, idx) => {
+        //     ele.onclick = () => {
+        //         clearAuto();
+        //         goSlide(idx);
+        //     }; // click
+        // }); // forEach
         
     
 } // loadFn()
