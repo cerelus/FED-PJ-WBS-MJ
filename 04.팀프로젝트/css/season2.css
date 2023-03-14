@@ -103,8 +103,8 @@ a {
     align-items: center;
 
     padding: 0 5vw;
-    box-sizing: border-box;
     width: 50%;
+    box-sizing: border-box;
 }
 .txtbx img {
     width: 270px;
@@ -129,19 +129,18 @@ a {
     display: none;
 }
 .slide3 {
-    /* li opacity 적용 */
     position: relative;
 
     width: 100%;
     height: 100vh;
 }
 .slide3 li {
-    opacity: 0;
-    /* .slide2 li .txt 부모 */
+    /* 부모자격 */
     position: absolute;
     width: 100%;
     height: 100%;
 
+    opacity: 0;
     transition: 1s;
 }
 .slide3 li img {
@@ -164,14 +163,15 @@ a {
     color: #fff;
 }
 .txt h3 {
-    font-size: 38px;
     margin-bottom: 8vh;
+    font-size: 38px;
 }
 .sbtn {
-    cursor: pointer;
     position: absolute;
     top: 50%;
+
     transform: translateY(-50%);
+    cursor: pointer;
 }
 .sbtn img {
     width: 80px;
@@ -188,6 +188,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 28px 0;
+
     width: 50%;
 }
 .btns h2 {
@@ -198,26 +199,28 @@ a {
     position: relative;
 
     width: 55%;
-    cursor: pointer;
-    opacity: 0.6;
     padding: 25px 40px;
     box-sizing: border-box;
-
+    overflow: hidden;
+    
     border: 1px solid #c2c2c2;
     border-radius: 19px;
-
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
+    
+    opacity: 0.6;
     transition: color 0.3s, opacity 0.3s;
+
+    cursor: pointer;
 }
 .btns div::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #5a4d4d92;
     top: 0;
     left: -100%;
+    
+    background-color: #5a4d4d92;
     transition: all 0.3s ease-in-out;
     z-index: -1;
 }
@@ -227,20 +230,21 @@ a {
 }
 .btns div img {
     position: absolute;
-    height: 90%;
     top: 5px;
     right: 20px;
+
+    height: 90%;
 }
 .btns div.op1 {
-    background-color: #5a4d4d92;
-    opacity: 1;
-    color: #fff;
     font-weight: bold;
+    background-color: #5a4d4d92;
+    color: #fff;
+    opacity: 1;
 }
 .btns div:hover {
+    font-weight: bold;
     opacity: 1;
     color: #fff;
-    font-weight: bold;
 }
 .btns div.op1:hover::before {
     display: none;
@@ -249,8 +253,9 @@ a {
 /************* 4번 컨텐츠 *************/
 .ct4 h2 {
     margin: 0 auto;
-    font-size: 50px;
     padding: 4% 0;
+
+    font-size: 50px;
     color: #fff;
 }
 .ct4 {
@@ -268,10 +273,10 @@ a {
 }
 .slide4 {
     display: flex;
-
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
 }
@@ -290,21 +295,23 @@ a {
     object-fit: cover;
 }
 
-/* 블릿버튼 */
+/* 인디케이터 */
 .indic {
     display: flex;
+    justify-content: center;
+    gap: 3%;
+
     width: 100%;
     height: 100%;
-    gap: 3%;
+
     padding: 15px;
-    justify-content: center;
     box-sizing: border-box;
 }
 .indic li {
     position: relative;
-    opacity: 0.6;
-
+    
     transition: 0.3s;
+    opacity: 0.6;
     cursor: pointer;
 }
 
@@ -317,16 +324,17 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
     color: #fff;
-    font-size: 20px
 }
 .ibtx {
-    width: 45%;
-    height: 13%;
     margin: 0 auto;
     margin-top: 3%;
-    background-color: rgba(255, 255, 255, 0.129);
+
+    width: 45%;
+    height: 13%;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.129);
 }
 .indic li.on4 {
     opacity: 1;
@@ -338,15 +346,26 @@ a {
 .mimg {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
 }
 .mimg li {
-    width: 100%;
     position: relative;
+    width: 100%;
 }
 .mimg li img {
     width: 100%;
+}
+.mimg li a::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 58px;
+    height: 58px;
+
+    transform: translate(-50%,-50%);
+    background: url(../image/car2_btn.png) no-repeat center/cover;
 }
 
 /************* 미디어쿼리 *************/
@@ -367,7 +386,6 @@ a {
     #cont {
         font-size: 20px;
     }
-    /* 3번 컨텐츠 */
     .btns div {
         padding: 25px 20px;
     }
@@ -388,6 +406,12 @@ a {
     #cont {
         font-size: 18px;
     }
+    .ct4 {
+        height: calc(100vh - 160px);
+    }
+    .tit_ct1 {
+        width: 70vw;
+    }
     .tit_ct1 h1 {
         margin-bottom: 13%;
         font-size: 60px;
@@ -400,6 +424,9 @@ a {
     .slidebx {
         width: 100%;
     }
+    .slidebx a {
+        display: block;
+    }
     .ibtx {
         display: none;
     }
@@ -410,38 +437,26 @@ a {
     .txtbx{
         padding: 0 100px;
     }
-    .slidebx a {
-        display: block;
-    }
-    .sbx {
-        width: 60%;
-    }
-    .tit_ct1 {
-        width: 70vw;
-    }
     .txtbx img {
         width: 180px;
         margin-bottom: 15px;
     }
-    .ct4 {
-        height: calc(100vh - 160px);
+    .sbx {
+        width: 60%;
     }
 }
 @media screen and (max-width: 740px) {
+    .tit_ct1 {
+        width: 85vw;
+    }
     .txtbx img {
         display: none;
     }
     .tit_ct1 h1 {
         font-size: 50px;
     }
-    .tit_ct1 {
-        width: 85vw;
-    }
     #cont {
         font-size: 18px;
-    }
-    .sbx {
-        display: none;
     }
     .ct4 h2{
         font-size: 40px;
@@ -452,10 +467,13 @@ a {
     .txtbx {
         padding: 0 50px;
     }
+    .sbx {
+        display: none;
+    }
     #mimg{
         display: block;
+        margin: 0 auto;
         width: 400px;
-    margin: 0 auto;
     }
     .mimg li img {
         width: 100%;
@@ -469,21 +487,21 @@ a {
     
 }
 @media screen and (max-width: 500px) {
+    .ct4 h2 {
+      padding: 30px 0;
+      font-size: 38px;
+    }
+    #cont {
+        font-size: 16px;
+    }
     .sbtn img {
         width: 59px;
     }
     #mimg {
         width: 300px;
     }
-    .ct4 h2 {
-      padding: 30px 0;
-      font-size: 38px;
-    }
     .mimg{
       gap: 10px;
-    }
-    #cont {
-        font-size: 16px;
     }
 }
 @media screen and (max-width: 375px) {
